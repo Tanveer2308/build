@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>
+        <title>Exam Registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .div1{
+                border-radius: 25px;
+                border: 2px solid;
+                padding: 2%;
+                margin-top: 20px;
+                margin-left: 20px;
+                margin-right: 20px;
+                width: 1200px;
+                 }
+                 
+                 #t1{
+                     background-color: #B0C4DE;
+                     
+                     width: 1150px;
+                     font-size: 20px;
+                     margin-top: 1px; 
+                 }
+                 
+                 #t2{
+                     
+                     border-collapse:collapse;
+                     width: 1150px;
+                     border-color: grey;
+                     font-size: 18px;
+                 }
+                   #menu_bar
+		{
+			width: 100%;
+			height:30px;
+			margin-top: 4px;
+			background-color: maroon;
+		}
+		a{
+			color: white;
+			font-size: 25px;
+                        font-family: calibri;
+			margin-left: 10px;
+		}
+                .footer {
+   position:relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height:150px;
+   background-color:limegreen;
+   color: white;
+   text-align: center;
+}
+        </style>
+   
+    </head>
+    <body id="pagestyle" class="relative">
+
+<img align="center" src="ietlogo.png" style="background-color:limegreen;width:100%;height:150px">
+<div id="menu_bar" style="background-color:yellowgreen">
+	<a href="index.html">Home</a>
+	<a href="admin.jsp">Admin</a>
+	<a href="Register_sel.jsp">Student_Registration</a>
+</div>
+<center>
+    <form action="Student.jsp">
+        <div class="div1">
+
+<hr><h1>Examination Registration</h1><hr>
+<table id="t1">
+<tr><td style="text-align: center;">LOGIN</td></tr>
+</table><table border="1" id="t2">
+<tr>
+<td height="40px" style="text-align: right;">
+<b>Please Enter Enroll Number</b>
+</td>
+<td><input type="text" name="eno" class="form-control" style="font-size: 15px;width: 150px;height:27px" maxlength="7" required="">
+</td>
+</tr>
+<tr>
+<td height="35px" style="text-align: right;">
+<b>Select Student Status</b>
+</td>
+<td><select class="form-control" style="font-size: 15px;width: 150px;height:25px;" name="status" required="">
+	<option value="">--Select Status--</option>
+        <option>Regular</option>
+        <option>Ex</option>
+</select>
+</td>
+</tr>
+<tr><td height="35px" style="text-align: right;">
+<b>Select Student Semester</b>
+</td>
+<td><select class="form-control" style="font-size: 15px;width: 150px;height:25px;" name="sem" required="">
+        <option value="">--Select Semester--</option>
+	<option>1Sem</option>
+	<option>2Sem</option>
+	<option>3Sem</option>
+	<option>4Sem</option>
+	<option>5Sem</option>
+	<option>6Sem</option>
+	<option>7Sem</option> 
+	<option>8Sem</option>
+</select>
+</td>
+</tr>
+</table><input class="form-control" style="margin-top:10px; width: 120px;font-size:15px;" type="submit" name="btn" value="GO">     <input style="width: 120px;font-size: 15px;" type="button" name="cbtn" value="Cancel">
+
+</div>
+        </form>
+    <div class="footer">
+        <p> copyright IET, DAVV</p>
+        <p> Designed and Developed By :- </p>
+   
+</center>
+</body>
+</html>
